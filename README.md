@@ -1,7 +1,7 @@
 # login-architecture
 Imaplementation of Login design with different architecture like MVP, MVVM, VIPE, VIPER
 
-I encourage you to read more in details about different architecture 
+I encourage you to read more in details about different architecture used in android.
 
 MVP
 https://github.com/MindorksOpenSource/android-mvp-architecture
