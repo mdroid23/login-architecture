@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">KotlinLogin</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="invalid_cred">Invalid Credits</string>
+    <string name="login_success">Login Success</string>
+    <string name="err_username">Enter username</string>
+    <string name="err_password">Enter password</string>
+    <string name="str_success_login">Login Successful.</string>
+    <string name="str_failed_login">Invalid credential :(</string>
+</resources>

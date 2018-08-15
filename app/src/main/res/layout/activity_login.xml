@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.kotlinlogin.java_mvvm.LoginViewModel"/>
+    </data>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            bind:userNameError="@{viewModel.userNameError}"
+            android:afterTextChanged="@{(editable)->viewModel.afterUserTextChanged(editable)}"
+            android:hint="@string/user_name" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            bind:userNameError="@{viewModel.passwordError}"
+            android:afterTextChanged="@{(editable)->viewModel.afterPasswordTextChanged(editable)}"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{()-> viewModel.onLoginClicked()}"
+            bind:toastString="@{viewModel.toastString}"
+            android:text="Login" />
+
+    </LinearLayout>
+</layout>
