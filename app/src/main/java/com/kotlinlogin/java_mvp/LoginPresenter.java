@@ -14,7 +14,6 @@ public class LoginPresenter {
 
     public void onLoginClick(String userName,String password) {
 
-        //comment
         if (TextUtils.isEmpty(userName)) {
             loginView.setUserNameError(R.string.err_username);
         } else if (TextUtils.isEmpty(password)) {
