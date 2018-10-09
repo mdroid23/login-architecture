@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity implements LoginContract {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loginInteractor.onLoginClick();
+                loginInteractor.onLoginClick(getUserName(), getPassword());
             }
         });
     }

@@ -8,14 +8,11 @@ public class LoginPresenter {
 
     private LoginContract loginView;
 
-    LoginPresenter(LoginContract loginView) {
+    public LoginPresenter(LoginContract loginView) {
         this.loginView = loginView;
     }
 
-    public void onLoginClick() {
-
-        String userName = loginView.getUserName();
-        String password = loginView.getPassword();
+    public void onLoginClick(String userName,String password) {
 
         if (TextUtils.isEmpty(userName)) {
             loginView.setUserNameError(R.string.err_username);

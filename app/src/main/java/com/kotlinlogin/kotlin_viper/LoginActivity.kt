@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.kotlinlogin.R
-import com.kotlinlogin.R.id.*
 import com.kotlinlogin.Utils
 import com.kotlinlogin.java_mvvm.User
 import kotlinx.android.synthetic.main.layout_login.*
